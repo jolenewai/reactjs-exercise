@@ -9,14 +9,14 @@ function Joke(props){
     // } else {
     //     styles.display = "none"
     // }
-
+    
     return (
         <div className="JokesContainer">
-            <div className="question" style={{display: props.joke.question ? "block" : "none"}}>
-                {props.joke.question}
+            <div className="question" style={{display: props.question ? "block" : "none"}}>
+                {props.question}
             </div>
-            <div className="answer" style={{color: !props.joke.question && "red" }}>
-                {props.joke.answer}            
+            <div className="answer" style={{color: !props.question && "red" }}>
+                {props.answer}            
             </div>  
         </div>
     )
