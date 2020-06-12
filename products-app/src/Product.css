@@ -1,0 +1,7 @@
+.ProductContainer {
+    width: 40%;
+    padding: 10px;
+    margin: 5px;
+    display: inline-block;
+    background-color: #f3d2d1;
+}
