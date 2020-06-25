@@ -1,11 +1,11 @@
 import React from 'react'
 import '../style.css'
 
-function TodoItem(){
+function TodoItem(props){
     return (
         <div className="Todo">
-            <label className="label">Placeholder text here
-                <input type="checkbox" />
+            <label className="label">{props.item.text}
+                <input type="checkbox" checked={props.item.completed} />
                 <span className="checkmark"></span>
             </label>
         </div>
